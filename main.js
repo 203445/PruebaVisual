@@ -32,8 +32,6 @@ function sendData() {
 function sendParams() {
     con = require('./connect');
     localStorage.setItem('con',con);
-    location.href="./vista1.html";
-    
 }
 
 function addData() {

@@ -5,10 +5,16 @@ if(process.env.host == '' || process.env.host == 'null'){
     const hostTm= document.getElementById('host').value;
     if(hostTm != '' ){
         localStorage.setItem('host',hostTm);
-         process.env.host=localStorage.getItem('host'); 
-    
+        process.env.host=localStorage.getItem('host'); 
+        if (hostTm == 'localhost') {
+            document.getElementById('txtData').innerHTML = 'Conexion Exitosa';
+            location.href="./vista2.html";
+            
+        }
+        
     }
 }
+process.env.host=localStorage.getItem('host'); 
 
 const host =process.env.host;
 const user = process.env.user//document.getElementById('user').value;
@@ -29,9 +35,9 @@ connection.connect(function (err) {
         // console.log(err.code);
         // console.log(err.fatal);
         // console.log("error");   
-        document.getElementById('txtData').value = err.code + err.fatal+ 'Conexión fallida';
+        document.getElementById('txtData').innerHTML = err.code + err.fatal+ 'Conexión fallida';
     } else {
-        //document.getElementById('txtData').value = 'Conexion Exitosa';
+        //document.getElementById('txtData').innerHTML = 'Conexion Exitosa';
     }
 });    
 
