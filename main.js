@@ -4,7 +4,7 @@ if (typeof localStorage === "undefined" || localStorage === null) {
     
   }
   require('dotenv').config();
-//   localStorage.setItem('llave', 'valor');
+    //localStorage.setItem('llave', 'valor');
   console.log(localStorage.getItem('llave'));
  
 var con;
