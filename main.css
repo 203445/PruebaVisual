@@ -1,0 +1,47 @@
+body,html{
+    margin: 0 auto;
+    background-color: burlywood;
+}
+input{
+    /*tamaño del campo del texto a lo largo*/
+    width: 250px !important;
+   
+}
+.centrar{
+    /* centrar formulario*/
+    margin: 0 auto ;
+    width: min-content;
+    text-align: center;
+}
+.notification{
+    padding: 1.25rem 1.25rem 1.25rem 1.25rem !important;
+    width: 500px ;
+    margin: 0 auto;
+    height: 100% !important;
+    
+}
+.image{
+    margin: auto !important;
+    width: 70% !important;
+}
+.centrar *{
+    margin-top: 25px;
+    font-size: medium !important; 
+    border: block;
+}
+.centrar2 {
+    margin-top: 25%;
+    font-size: medium !important; 
+    border: block;
+}
+.container{
+    max-width: max-content;
+    box-sizing: unset;
+}
+.row-custom {
+    top: 100px !important;
+    width: 90%;
+    height: 90% !important;
+    left: 5%;
+}
+

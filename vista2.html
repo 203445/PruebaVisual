@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bulma.css">
+    <link rel="stylesheet" href="./main2.css">
+    <title>Tabla</title>
+</head>
+<body onload="listarData()">
+    <br>
+    <br>
+    <div class="container">
+        <div class="notification is-primary" style="background-color: bisque !important;">
+            <div class="columns">
+                <div class="column is-one-fifth">
+                    <div class="columns is-mobile">
+                        <div class="column is-half is-offset-one-quarter">
+                            <button class="button is-primary"  onclick="addData();">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <div class="card-content"style="background-color: bisque !important;">
+                          <div class="content">
+                            <input id="nombre" class="input is-primary"  type="text" placeholder="Nombre">
+                            <br>
+                            <br>
+                            <input id="edad" class="input is-primary"  type="text" placeholder="Edad">
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <div class="card-content"style="background-color: bisque !important;">
+                          <div class="content">
+                            <input id="ap_pat" class="input is-primary" type="text" placeholder="Apellido Paterno">
+                            <br>
+                            <br>
+                            <input id="ap_mat" class="input is-primary" type="text" placeholder="Apellido Materno">
+                          </div>
+                        </div>
+                      </div>
+                </div>
+              </div>
+        </div>
+        <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+          <thead>
+            <tr>
+              <th><abbr title="Position">Pos</abbr></th>
+              <th><abbr title="Nombre">Nombre</abbr></th>
+              <th><abbr title="Apellido Paterno">Ap_pat</abbr></th>
+              <th><abbr title="Apellido Materno">Ap_mat</abbr></th>
+              <th><abbr title="Edad">Edad</abbr></th>
+            </tr>
+          </thead>
+          <tbody id="tablita">
+
+          </tbody>
+          <tfoot>
+          
+      </div>
+</body>
+<footer>
+      
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="./main.js"></script> 
+    <script>
+     // window.onload="listarData()";
+      /*$(document).ready(function() {
+      console.log( "Listo!" );
+      listarData();
+    });*/
+    </script>
+</footer> 
+</html>
